@@ -25,10 +25,47 @@
             int cars = 4, bikes = 7, trucks = 8;
 
             // string concatenation
-            Console.WriteLine("I have " + cars +" cars, " + bikes + " bikes and " + trucks + " trucks");
+            Console.WriteLine("I have " + cars + " cars, " + bikes + " bikes and " + trucks + " trucks");
 
             // string interpolation
             Console.WriteLine($"I have {cars} cars, {bikes} bikes and {trucks} trucks");
+
+
+            string[] colors = { "Red", "Blue", "Yellow", "Green", "White" };
+
+            foreach (var c in colors)
+            {
+                Console.WriteLine($"{c,10}");
+            }
+
+
+            int i = 5;
+            int j = i;
+
+            i++;
+
+
+            Console.WriteLine("\n\n\n");
+
+
+            Circle c1 = new Circle();
+            Console.WriteLine(c1.radius);
+
+            c1.radius = 50;
+            Console.WriteLine(c1.radius);
+
+            Circle c2 = c1;
+            //Circle c2 = new Circle();
+            Console.WriteLine(c2.radius);
+
+            c2.radius = 100;
+            Console.WriteLine(c2.radius);
+            Console.WriteLine(c1.radius);
         }
+    }
+
+    class Circle
+    {
+        public double radius;
     }
 }
