@@ -17,6 +17,9 @@
             decimal m = 5.5M;
             long l = 45433432L;
 
+
+            byte b = 121;
+
             var p = "5.5";
 
             Console.WriteLine(@"hello\nworld");
@@ -61,6 +64,26 @@
             c2.radius = 100;
             Console.WriteLine(c2.radius);
             Console.WriteLine(c1.radius);
+
+
+
+            Console.WriteLine("\n\n");
+
+
+
+            string s1 = "hello";
+            string s2 = "world";
+
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+
+            s1 = s2;
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+
+            s2 = "bbye";
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
         }
     }
 
