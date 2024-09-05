@@ -7,7 +7,7 @@
         static void Main(string[] args)
         {
             int @float;
-            int x;
+            int x = 5;
 
             //Console.WriteLine(x);
             Console.WriteLine(y);
@@ -84,6 +84,26 @@
             s2 = "bbye";
             Console.WriteLine(s1);
             Console.WriteLine(s2);
+
+
+            Console.WriteLine("\n\n");
+
+
+
+            double amount = 32432.324;
+            Console.WriteLine(amount.ToString("C"));
+
+            double rate = 0.15;
+            Console.WriteLine(rate.ToString("P0"));
+
+            double num = 324324.2347;
+            Console.WriteLine(num.ToString("F3"));
+
+
+            int? ss = null;
+
+
+            //int xx = d as int;
         }
     }
 
